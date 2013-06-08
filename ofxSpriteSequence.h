@@ -22,7 +22,7 @@ void setPlayMode(mode m); //有3种播放模式 正播，倒播,pingpong播,
 void setKeepLastFrame(bool b); //播完了是否停留在最后一帧
 
 bool setLoopNum(int num); //-1 无限次
-int getLoopNum() //2013.6.7 
+int getLoopNum(); //2013.6.7 
 
 void setPlay(); //2013.6.8
 void setPause(); //2013.6.8
