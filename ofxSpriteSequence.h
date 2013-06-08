@@ -27,7 +27,7 @@ int getLoopNum(); //2013.6.7
 void setPlay(); //2013.6.8
 void setPause(); //2013.6.8
 void setStop(); //2013.6.8
-void isPlay(); //当前是否是播放状态2013.6.8
+void isDone(); //当前是否是播放状态2013.6.8
 
 
 private:
