@@ -1,11 +1,11 @@
 #pragma once
 
-class ofxImageSequence{
+class ofxSpriteSequence{
 
 public:
 
-ofxImageSequence();
-~ofxImageSequence();
+ofxSpriteSequence();
+~ofxSpriteSequence();
 
 
 void update();
