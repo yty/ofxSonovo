@@ -2,5 +2,3 @@ ofxSonovo
 =========
 
 sonovo
-
-test
