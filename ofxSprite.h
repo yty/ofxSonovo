@@ -26,7 +26,7 @@ ofvec2f getScale();
 
 ///Render
 
-void setTexture(ofTexture* tex) //设置sprite将绘制的纹理
+void setTexture(ofTexture* tex); //设置sprite将绘制的纹理
 void setShader(ofShader* shader); //设置sprite将使用的shader
 bool isShader();  //是否使用了shader
 
