@@ -1,4 +1,3 @@
-
 #pragma once
 
 class ofxSpriteCollection{
@@ -24,6 +23,6 @@ void playSection(string name = "") //如果为空播放所有section,如果指�
 
 
 //sequenceSection结构或类:sectionName,sequenName,startFrame,endFrame,loopNum,(delayFrame,delayValue这里也可以用你的思路)
-也可以考虑用Clip
+//备选名字sequenceClip，或者都去掉sequence
 
 //备选名字ofxImageSequenceManager.h,ofxImageSequenceCollection.h
