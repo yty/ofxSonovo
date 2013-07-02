@@ -1,41 +1,21 @@
 #pragma once
+#include "ofTexture.h"
+#include "ofShader.h"
+#include "ofxObject.h"
 
-class ofxSprite{
+class ofxSprite : public ofTexture, public ofxObject
+{
 
 public:
 
-ofxSprite();
-~ofxSprite();
+ofxSprite(){}
+virtual ~ofxSprite(){}
 
 
-void update();
-void draw();
-
-///Transform
-
-void setPosition(ofvec2f pos);
-void setPosition(float x,float y);
-ofvec2f getPosition();
-
-void setRotate(float angle);
-float getRotate();
-
-void setScale(ofvec2f scale);
-void setScale(float x,float y);
-ofvec2f getScale();
-
-///Render
-
-void setTexture(ofTexture* tex); //设置sprite将绘制的纹理
-void setShader(ofShader* shader); //设置sprite将使用的shader
-bool isShader();  //是否使用了shader
-
-void setColor(ofColor color); //设置sprite将使用的color
-ofColor getColor();
-
-private:
- ofTexture* tex;
- bool isShader; 
+ void draw();
+	void draw(ofPoint pos,float ang,float s,ofColor cl);
+ 
+	bool loadFromFile(const char *filename); //当没有资源管理器时使用,如果有资源管理器加载资源，直接=赋值
 
 }
 
@@ -43,4 +23,5 @@ private:
 //1根据ofxSprite派生出slicedSprite,tileSprite
 //2添加Near方法
 //3添加Rotate的其他轴
+//4添加BlendMode
 
