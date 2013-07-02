@@ -5,17 +5,16 @@
 
 class ofxSprite : public ofTexture, public ofxObject
 {
+ public:
 
-public:
-
-ofxSprite(){}
-virtual ~ofxSprite(){}
+ ofxSprite(){}
+ virtual ~ofxSprite(){}
 
 
  void draw();
-	void draw(ofPoint pos,float ang,float s,ofColor cl);
+ void draw(ofPoint pos,float ang,float s,ofColor cl);
  
-	bool loadFromFile(const char *filename); //当没有资源管理器时使用,如果有资源管理器加载资源，直接=赋值
+ bool loadFromFile(const char *filename); //当没有资源管理器时使用,如果有资源管理器加载资源，直接=赋值
 
 }
 
