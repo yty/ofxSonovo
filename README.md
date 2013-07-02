@@ -20,3 +20,6 @@ https://github.com/companje/ofxSpriteManager/blob/master/ofxSprite.h
 
 ofxSpriteSheetRenderer 这种tile方式，个人感觉可以先不考虑。
 https://github.com/stfj/ofxSpriteSheetRenderer
+
+ofxImageSequencePlayer 继承于ofBaseVideoPlayer
+https://github.com/julapy/ofxImageSequencePlayer/tree/master/src
